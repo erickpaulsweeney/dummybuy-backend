@@ -13,6 +13,9 @@ const adSchema = mongoose.Schema({
         type: Number,
         require: true,
     },
+    image: {
+        type: String,
+    },
     seller: {
         type: String,
         ref: "User",
