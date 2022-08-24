@@ -35,7 +35,7 @@ app.use(authenticateRequest);
 app.use("/category", categoryRouter);
 app.use("/ads", adsRouter);
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
 
 function authenticateRequest(req, res, next) {
     const authHeaderInfo = req.headers["authorization"];
